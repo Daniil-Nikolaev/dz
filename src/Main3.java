@@ -3,10 +3,11 @@ public class Main3 {
         boolean flag = true;
         int a=192345678;
         int b=a%10;
-        for (;a>0;) {
+        while (a>0) {
             a/=10;
-            if(b == a % 10){
+            if (b == a % 10) {
                 flag = false;
+                break;
             }
         }
         System.out.println(flag);
